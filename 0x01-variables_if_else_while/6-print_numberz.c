@@ -10,10 +10,10 @@
 
 int main(void)
 {
-char ch = 'a';
-while (ch <= 'j')
+int ch = 48;
+while (ch <= 57)
 {
-putchar(ch - 49);
+putchar(ch);
 ch++;
 }
 putchar('\n');

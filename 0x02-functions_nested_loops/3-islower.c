@@ -5,7 +5,9 @@
  *
  * @c : the comming symbole
  *
- * return - 0 or 1 (sucess)
+ * Return: 0 it will return not _islower
+ * or 1  it will return _islower (sucess)
+ *
  */
 
 int _islower(int c)

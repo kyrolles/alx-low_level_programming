@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
+* main - Entry point
  *
  * Description: A C  program will assign a random number to the variable n each
  * time it is executed order to print whether the number stored in the variable

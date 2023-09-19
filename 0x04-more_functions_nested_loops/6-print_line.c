@@ -18,9 +18,8 @@ else
 {
 while (n--)
 {
-_putchar(' ');
+_putchar('_');
 }
-_putchar(92);
 _putchar('\n');
 }
 }

@@ -1,10 +1,10 @@
 #include"main.h"
 
 /**
- * _isupper - checks for a digit (0 through 9).
+ * _isdigit - checks for a digit (0 through 9).
  * @c: is the character.
  *
- * Return: Returns 1 if c is bettween 0 and 9 
+ * Return: Returns 1 if c is bettween 0 and 9
  * Returns 0 otherwise
  */
 

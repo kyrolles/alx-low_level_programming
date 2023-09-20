@@ -23,7 +23,7 @@ void print_triangle(int size)
 		return;
 	}
 
-	dis = size - 1;
+	dis = size;
 	for (i = 0 ; i < size ; i++)
 	{
 /*

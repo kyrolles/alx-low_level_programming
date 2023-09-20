@@ -1,6 +1,4 @@
 #include"main.h"
-#include <iso646.h>
-
 /**
  * print_triangle - prints a triangle,
  * followed by a new line.

@@ -1,4 +1,5 @@
 #include"main.h"
+#include <iso646.h>
 
 /**
  * print_triangle - prints a triangle,
@@ -11,7 +12,7 @@
 void print_triangle(int size)
 {
 int i, j, margin, s;
-s = size;
+s = size - 1;
 
 if (size <= 0)
 {

@@ -15,7 +15,6 @@ s = size - 1;
 if (size <= 0)
 {
 _putchar('\n');
-return;
 }
 else
 {

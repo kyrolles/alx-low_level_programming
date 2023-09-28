@@ -2,18 +2,16 @@
 
 /**
   * print_rev -  prints a string, followed by a new line, to stdout
-  * @s: the string.
-  * @ptr_s : pointer.
+  * @str : pointer.
   *
   */
 
 void print_rev(char *str)
 {
-char *ptr_s = &str[-1];
-while (*ptr_s != '\0')
+while (*str != '\0')
 {
-_putchar(*ptr_s);
-ptr_s--;
+_putchar(*str);
+str--;
 }
 _putchar('\n');
 }

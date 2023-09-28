@@ -14,10 +14,9 @@ while (*(s + end) != '\0')
 {
 end++;
 }
-while (*s != '\0')
+while (end--)
 {
 _putchar(s[end]);
-end--;
 }
 _putchar('\n');
 }

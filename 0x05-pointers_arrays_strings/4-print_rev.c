@@ -14,9 +14,10 @@ for (; *s != '\0'; s++)
 {
 count++;
 }
-while (count--)
+while (*s != '\0')
 {
-_putchar(s[count]);
+_putchar(*s);
+s--;
 }
 _putchar('\n');
 }

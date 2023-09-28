@@ -14,7 +14,7 @@ for (; *s != '\0'; s++)
 {
 count++;
 }
-s = s + count;
+*s = *s + count;
 while (*s != '\0')
 {
 _putchar(*s);

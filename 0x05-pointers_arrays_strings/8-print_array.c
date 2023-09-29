@@ -13,7 +13,7 @@ int i = 0;
 
 while (n--)
 {
-if (n > i)
+if (n >= i)
 {
 printf("%d, ", *a);
 }

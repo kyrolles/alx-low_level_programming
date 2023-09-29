@@ -8,7 +8,6 @@
 
 void rev_string(char *s)
 {
-void _puts(char *s);
 void print_rev(char *s);
 s = s;
 }

@@ -31,8 +31,8 @@ n = (i - 1) / 2;
 count = (i + 1) / 2;
 while (count--)
 {
-_putchar(str[n]);
 n++;
+_putchar(str[n]);
 }
 }
 _putchar('\n');

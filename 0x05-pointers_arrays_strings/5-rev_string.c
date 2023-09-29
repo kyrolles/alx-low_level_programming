@@ -15,7 +15,7 @@ while (*s != '\0')
 _putchar(*s);
 s++;
 }
-s = 0;
+s = &s[0];
 while (*(s + end) != '\0')
 {
 end++;

@@ -11,9 +11,7 @@ void print_array(int *a, int n)
 {
 while (n--)
 {
-_putchar(*a);
-_putchar(',');
-_putchar(' ');
+printf("%d, ", *a);
 a++;
 }
 _putchar('\n');

@@ -15,10 +15,10 @@ while (str[i])
 {
 i++;
 }
-count = i;
 if (i % 2 == 0)
 {
 n = i / 2;
+count = n;
 while (count--)
 {
 _putchar(str[n]);
@@ -28,6 +28,7 @@ n++;
 else if (i % 2 != 0)
 {
 n = (i - 1) / 2;
+count = n;
 while (count--)
 {
 _putchar(str[n]);

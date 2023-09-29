@@ -21,5 +21,5 @@ printf("%d", *a);
 }
 a++;
 }
-_putchar('\n');
+printf("\n");
 }

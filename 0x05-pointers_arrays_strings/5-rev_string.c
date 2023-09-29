@@ -8,15 +8,6 @@
 
 void rev_string(char *s)
 {
-int end = 0;
-
-while (s[end])
-{
-end++;
-}
-while (end--)
-{
-_putchar(s[end]);
-}
-_putchar('\n');
+void _puts(char *s);
+void print_rev(char *s);
 }

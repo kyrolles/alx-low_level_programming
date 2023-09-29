@@ -1,4 +1,4 @@
-#include"main.h"
+#include "holberton.h"
 
 /**
  * _strcpy - fuction copies the string pointed
@@ -7,16 +7,16 @@
  *
  * Return: a copy of the src.
  */
-
 char *_strcpy(char *dest, char *src)
 {
-int i = -1;
+	int index = 0;
 
-do {
-i++;
-src++;
-dest[i] = *src;
-} while (*src != '\0');
-
-return (dest);
+	while (*src != '\0')
+	{
+		dest[index] = *src;
+		index++;
+		src++;
+	}
+	return (dest);
 }
+

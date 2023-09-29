@@ -9,14 +9,12 @@
 
 void print_array(int *a, int n)
 {
-int i = 0;
-
 while (n--)
 {
-_putchar(a[i]);
+_putchar(*a);
 _putchar(',');
 _putchar(' ');
-i++;
+a++;
 }
 _putchar('\n');
 }

@@ -9,10 +9,8 @@
 
 void print_array(int *a, int n)
 {
-int r;
 int i = 0;
-r = n + 1;
-while (r--)
+while (n--)
 {
 if (n > i)
 {
@@ -20,7 +18,7 @@ printf("%d, ", *a);
 }
 else
 {
-printf("%d", *a);
+printf(" %d", *a);
 }
 i++;
 a++;

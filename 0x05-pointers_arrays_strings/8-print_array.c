@@ -9,16 +9,16 @@
 
 void print_array(int *a, int n)
 {
-int i = 0;
+int i = -1;
 while (n--)
 {
-if ((n + 1) > i)
+if (1 > i)
 {
 printf("%d, ", *a);
 }
 else
 {
-printf(" %d", *a);
+printf("%d", *a);
 }
 i++;
 a++;

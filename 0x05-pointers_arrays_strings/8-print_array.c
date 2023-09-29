@@ -9,10 +9,9 @@
 
 void print_array(int *a, int n)
 {
-int x, i;
+int i;
 
-n = x;
-while (x--)
+while (n--)
 {
 _putchar(a[i]);
 _putchar(',');

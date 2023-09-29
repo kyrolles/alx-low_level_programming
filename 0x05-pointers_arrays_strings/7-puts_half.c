@@ -28,7 +28,7 @@ n++;
 else if (i % 2 != 0)
 {
 n = (i - 1) / 2;
-count = i / 2;
+count = (i + 1) / 2;
 while (count--)
 {
 _putchar(str[n]);

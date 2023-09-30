@@ -11,7 +11,6 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-int countd, counts;
 int i = 0;
 
 while (n-- && (src[i] != '\0'))

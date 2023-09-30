@@ -20,7 +20,7 @@ for (countd = 0; *(dest + countd) != '\0'; countd++)
 for (counts = 0; *(dest + counts) != '\0'; counts++)
 {
 }
-while (n--)
+ while (n-- && (src[i] != '\0'))
 {
 dest[countd] = src[i];
 i++;

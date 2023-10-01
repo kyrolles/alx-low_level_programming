@@ -1,30 +1,47 @@
 #include "main.h"
-/**
- * *cap_string - function that changes all
- * lowercase letters of a string to uppercase.
- * @str: an array of char.
- *
- * Return: the array uppercase (str).
- */
 
+/**
+* is_sep - check if a char is a seperator.
+* @k: the char to test.
+*
+* Return: 1 if seperator is found else 0
+*/
+int is_sep(char k)
+{
+	char sep[] = {'\t', '\n', ' ', ',', ';', '!',
+		      '.', '?', '\"', '(', ')', '{', '}'};
+	int i = 0;
+
+	while (sep[i] != '\0')
+	{
+		if (k == sep[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+/**
+* cap_string - This function capitalizes all words of a string.
+* @str: sring to be processed.
+*
+* Return: pointer to the modified string.
+*/
 char *cap_string(char *str)
 {
-int count, i;
+	int sep, i;
 
-/* Capitalize the first character if it's a lowercase letter */
-if (str[0] >= 'a' && str[0] <= 'z')
-{
-str[0] -= 32;
+	sep = 1;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (sep == 1 && (str[i] >= 'a' && str[i] <= 'z'))
+		{
+			str[i] -= 32;
+			sep = 0;
+		}
+		sep = is_sep(str[i]);
+		i++;
 }
-for (count = 0; str[count] != '\0'; count++)
-{
-if (str[count] == '\n' || str[count] == ' ' || str[count] == ',' || str[count] == ';' || str[count] == '.' || str[count] == '!' || str[count] == '?' || str[count] == '"' || str[count] == '(' || str[count] == ')' || str[count] == '{' || str[count] == '}' || str[count] == '\t')
-{
-if (str[count + 1] >= 'a' && str[count + 1] <= 'z')
-{
-str[count + 1] -= 32;
-}
-}
-}
-return (str);
+	return (str);
 }

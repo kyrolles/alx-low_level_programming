@@ -12,10 +12,12 @@ int countd;
 int count = 0;
 int arr[n];
 
-for (countd = 0; countd < n; countd++) {
+for (countd = 0; countd < n; countd++)
+{
 arr[countd] = a[countd];
 }
-for (countd = n - 1; countd >= 0; countd--) {
+for (countd = n - 1; countd >= 0; countd--)
+{
 a[countd] = arr[count];
 count++;
 }

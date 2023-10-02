@@ -2,27 +2,32 @@
 /**
  * unsigned int _strspn - Write a function that copies memory area.
  * @s: an array of char.
- * @accept: the ASCII.
+ * @accept: the second array.
  *
- * Return: the array (s) or (NULL)
+ * Return: the array (i) the length.
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int i;
-unsigned int j;
-unsigned int count = 0;
+	unsigned int i;
+	unsigned int j;
 
-for (i = 0; *s != '\0'; i++)
-{
-for (j = 0; *accept != '\0'; j++)
-{
-if (s[i] == accept[j])
-{
-count++;
-break;
-}
-}
-}
-return (count);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				break;
+			}
+		}
+
+		/* If no match found in accept string, break the outer loop */
+		if (accept[j] == '\0')
+		{
+			return (i);
+		}
+	}
+
+	return (i);
 }

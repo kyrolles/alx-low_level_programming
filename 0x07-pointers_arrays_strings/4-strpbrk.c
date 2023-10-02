@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * *_strpbrk - Write a function that copies memory area.
+ * *_strpbrk - Write a function that
+ * searches a string for any of a set of bytes..
  * @s: an array of char.
  * @accept: the second array.
  *

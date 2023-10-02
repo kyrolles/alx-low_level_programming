@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * unsigned int _strspn - Write a function that copies memory area.
+ * _strspn - Write a function that copies memory area.
  * @s: an array of char.
  * @accept: the second array.
  *

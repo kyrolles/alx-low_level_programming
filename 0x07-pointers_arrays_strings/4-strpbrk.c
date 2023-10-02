@@ -10,8 +10,8 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	int j;
+	unsigned int i;
+	unsigned int j;
 	char *p;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -28,5 +28,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 
-	return (0);
+	return (NULL);
 }

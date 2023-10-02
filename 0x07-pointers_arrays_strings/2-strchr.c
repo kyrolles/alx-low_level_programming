@@ -15,7 +15,7 @@ for (i = 0; *s != '\0'; i++)
 {
 if (s[i] == c)
 {
-return (s);
+return (s + i);
 }
 }
 return (NULL);

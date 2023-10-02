@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * *_strchr - Write a function that copies memory area.
+ * unsigned int _strspn - Write a function that copies memory area.
  * @s: an array of char.
- * @c: the ASCII.
+ * @accept: the ASCII.
  *
  * Return: the array (s) or (NULL)
  */
@@ -13,9 +13,9 @@ unsigned int i;
 unsigned int j;
 unsigned int count = 0;
 
-for (i = 0; s[i] >= '\0'; i++)
+for (i = 0; *s != '\0'; i++)
 {
-for (j = 0; accept[j] >= '\0'; j++)
+for (j = 0; *accept != '\0'; j++)
 {
 if (s[i] == accept[j])
 {

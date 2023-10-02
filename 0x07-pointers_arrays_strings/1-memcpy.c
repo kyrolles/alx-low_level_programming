@@ -2,7 +2,7 @@
 /**
  * *_memcpy - Write a function that copies memory area.
  * @dest: an array of char.
- * @src: array 
+ * @src: arra
  * @n: num of int.
  *
  * Return: the array uppercase (str).

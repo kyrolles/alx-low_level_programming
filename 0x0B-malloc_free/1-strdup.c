@@ -14,7 +14,11 @@ char *ptr;
 unsigned int i;
 unsigned int size;
 
-for (size = 0; *(str + size) != '\0'; size++)
+if (str == NULL)
+{
+return (NULL);
+}
+for (size = 0; str[size] >= '\0'; size++)
 {
 }
 ptr = (char *) malloc(sizeof(char) * size);

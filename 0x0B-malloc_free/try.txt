@@ -1,12 +1,19 @@
-/**
- *
- * for (i = 0; i < size1; i++)
- * {
- * *(ptr + i) = *(s1 + i);
- * }
- * for (k = size1 ,r = 0; r < size; r++, k++)
- * {
- * *(ptr + k) = *(s2 + r);
- * }
- */
+for (i = 0; i < size1; i++)
+{
+*(ptr + i) = *(s1 + i);
+}
+for (k = size1 ,r = 0; r < size; r++, k++)
+{
+*(ptr + k) = *(s2 + r);
+}
+----------------------------------------------
+
+for (i = 0; i < size2; i++)
+{
+s1[size1 + i] = s2[i];
+}
+for (r = 0; r < size; r++)
+{
+*(ptr + r) = *(s1 + r);
+}
 

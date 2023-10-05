@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 char *ptr;
-unsigned int i, r;
+unsigned int i, k, r;
 unsigned int size1, size2, size;
 
 if (s1 == NULL && s2 == NULL)
@@ -32,13 +32,13 @@ return (NULL);
 }
 else
 {
-for (i = 0; i < size2; i++)
+for (i = 0; i < size1; i++)
 {
-s1[size1 + i] = s2[i];
+*(ptr + i) = *(s1 + i);
 }
-for (r = 0; r < size; r++)
+for (k = size1, r = 0; r < size; r++, k++)
 {
-*(ptr + r) = *(s1 + r);
+*(ptr + k) = *(s2 + r);
 }
 return (ptr);
 }

@@ -18,7 +18,7 @@ for (size = 0; *(str + size) != '\0'; size++)
 {
 }
 ptr = (char *) malloc(sizeof(char) * size);
-if (str == 0)
+if (str == 0 || str == NULL)
 {
 return (NULL);
 }

@@ -13,10 +13,6 @@ char *ptr;
 unsigned int i, k;
 unsigned int size1, size2, size;
 
-if (s1 == NULL && s2 == NULL)
-{
-return (NULL);
-}
 if (s1 != NULL)
 {
 for (size1 = 0; s1[size1] != '\0'; size1++)
@@ -44,5 +40,6 @@ for (k = 0; k < size2;  k++)
 {
 *(ptr + k + size1) = *(s2 + k);
 }
+ ptr[size - 1] = '\0';
 return (ptr);
 }

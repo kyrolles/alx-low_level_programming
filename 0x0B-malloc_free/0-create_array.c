@@ -25,6 +25,7 @@ for (i = 0; i < size; i++)
 {
 *(ptr + i) = c;
 }
+free(ptr);
 return (ptr);
 }
 free(ptr);

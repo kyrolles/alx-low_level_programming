@@ -36,8 +36,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-else
-{
 for (i = 0; i < size1; i++)
 {
 *(ptr + i) = *(s1 + i);
@@ -47,6 +45,4 @@ for (k = 0; k < size2;  k++)
 *(ptr + k + size1) = *(s2 + k);
 }
 return (ptr);
-}
-return (NULL);
 }

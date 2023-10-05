@@ -25,6 +25,7 @@ for (size2 = 0; s2[size2] != '\0'; size2++)
 {
 }
 size = size1 + size2;
+size += 1;
 ptr = (char *) malloc(sizeof(char) * size);
 if (ptr == NULL)
 {

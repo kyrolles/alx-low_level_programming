@@ -18,9 +18,10 @@ if (str == NULL)
 {
 return (NULL);
 }
-for (size = 0; str[size] >= '\0'; size++)
+for (size = 0; str[size] != '\0'; size++)
 {
 }
+size += 1;
 ptr = (char *) malloc(sizeof(char) * size);
 if (str == 0 || str == NULL)
 {

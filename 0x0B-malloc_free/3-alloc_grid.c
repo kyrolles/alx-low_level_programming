@@ -17,7 +17,7 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-ptr = (int **) malloc(sizeof(int) * height);
+ptr = (int **) malloc(sizeof(*ptr) * height);
 if (ptr == NULL)
 {
 return (NULL);
@@ -27,10 +27,6 @@ for (i = 0; i < height; i++)
 ptr[i] = (int *)malloc(sizeof(int) * width);
 if (ptr[i] == NULL)
 {
-while (i--)
-{
-free(ptr[i]);
-}
 free(ptr);
 return (NULL);
 }

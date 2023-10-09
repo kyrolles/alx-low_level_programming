@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *_calloc - function that allocates memory for an array, using malloc
- * @nmemb: array of elements.
- * @size: the size of each blokc in the array.
+ * *array_range -  function that creates an array of integers.
+ * @min: input int.
+ * @max: input int.
  *
  * Return: NULL if fails Or ptr if success.
  */
@@ -15,7 +15,7 @@ int i, t;
 if (min > max)
 {return (NULL); }
 t = max - min + 1;
-	ptr =(int *) malloc(sizeof(int) * t);
+	ptr = (int *) malloc(sizeof(int) * t);
 
 	if (ptr == NULL)
 	{

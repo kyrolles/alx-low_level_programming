@@ -1,17 +1,18 @@
 #include "dog.h"
+#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * free_dog - free(memory) dah dog and get fined by animal control
- * @d: pointer to dog stuct in memory.
+ * free_dog - free dog wii.
+ *@x: name.
  *
- * Return: nothing
+ * Return: Always 0.
  */
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
-		return;
+	{
 	free(d->name);
 	free(d->owner);
 	free(d);
+	}
 }

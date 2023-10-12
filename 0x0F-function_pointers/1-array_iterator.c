@@ -3,8 +3,8 @@
 /**
  * array_iterator - function that executes a function
  * given as a parameter on each element of an array.
- * @*array: the name i want to pass.
- * @*action: function_pointers.
+ * @array: the name i want to pass.
+ * @action: function_pointers.
  * @size: size of array
  *
  * Return: Nothing.

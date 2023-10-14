@@ -19,14 +19,12 @@ va_start(arg, n);
 
 for (i = 0; i < n; i++)
 {
-x = va_arg(arg, int);
-if (separator != NULL)
-{
+x = va_arg(arg, unsigned int);
 printf("%d", x);
-}
-if (i < n - 1)
+
+if (i < n - 1 && separator != NULL)
 {
-printf(", ");
+printf("%s", separator);
 }
 }
 printf("\n");

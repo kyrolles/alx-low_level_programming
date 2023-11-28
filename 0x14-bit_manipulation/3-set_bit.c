@@ -15,8 +15,7 @@ unsigned long int mask;
 		return (-1);
 
 	mask = (1 << index);
-	*n = *n | mask;
-	putchar((*n & 1));
+	*n = ((*n | mask) & 1);
 
 return (1);
 }

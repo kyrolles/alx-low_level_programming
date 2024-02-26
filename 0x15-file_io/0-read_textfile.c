@@ -21,8 +21,9 @@ int bytes_read, bytes_written;
 	}
 fd = open(filename, O_RDONLY);
 	if (fd < 0)
-		{	
-			return (0); }
+	{
+		return (0);
+	}
 buffer = malloc(sizeof(char) * letters + 1);
 	if (!buffer)
 		{

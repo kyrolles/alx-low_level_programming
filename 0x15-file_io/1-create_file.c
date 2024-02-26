@@ -1,6 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 #include <fcntl.h>
 /**
  * create_file - function that will create a new file and fill with with some

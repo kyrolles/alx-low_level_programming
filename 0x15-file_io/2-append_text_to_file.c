@@ -22,7 +22,7 @@ int chars_written;
 	{
 		return (-1);
 	}
-	else if (!text_content || !text_content[0])
+	else if (!text_content)
 	{
 		return (1);
 	}

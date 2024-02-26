@@ -1,6 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 #include <fcntl.h>
 
 /**
@@ -29,7 +30,7 @@ fd = open(filename, O_WRONLY | O_APPEND);
 		if (fd < 0)
 			{return (-1); }
 
-chars_written = write(fd, text_content, _strlen(text_content));
+chars_written = write(fd, text_content, strlen(text_content));
 	if (chars_written < 0)
 	{
 		close(fd);

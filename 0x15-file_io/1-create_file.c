@@ -24,13 +24,12 @@ fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 		if (fd < 0)
 			{return (-1); }
 
-chars_written = write(fd, text_content, strlen(text_content));
+chars_written = write(fd, text_content, strlen(text_content)+1);
 	if (chars_written < 0)
 	{
 		close(fd);
 		return (-1);
 	}
-
 
 	close(fd);
 	return (1);

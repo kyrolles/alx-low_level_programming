@@ -21,7 +21,7 @@ int bytes_read, bytes_written;
 	}
 fd = open(filename, O_RDONLY);
 	if (fd < 0)
-		{	perror("open");
+		{	
 			return (0); }
 buffer = malloc(sizeof(char) * letters + 1);
 	if (!buffer)
@@ -32,14 +32,12 @@ buffer = malloc(sizeof(char) * letters + 1);
 bytes_read = read(fd, buffer, letters);
 	if (bytes_read < 0)
 	{
-		perror("read");
 		free(buffer);
 		close(fd);
 		return (0); }
 bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 	if (bytes_written < 0)
 	{
-		perror("write");
 		free(buffer);
 		close(fd);
 		return (0); }

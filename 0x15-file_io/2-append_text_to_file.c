@@ -38,7 +38,5 @@ chars_written = write(fd, text_content, _strlen(text_content));
 
 	close(fd);
 	return (1);
-
-	return (0);
 }
 

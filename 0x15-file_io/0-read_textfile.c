@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -34,6 +33,7 @@ bytes_read = read(fd, buffer, letters);
 		free(buffer);
 		close(fd);
 		return (0); }
+	buffer[letters] = '\0';
 bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 	if (bytes_written < 0)
 	{
